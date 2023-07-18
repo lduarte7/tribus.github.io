@@ -13,6 +13,10 @@
   /* colors 
   */
 
+
+  --principal: #3e5744;
+  --secundario: #27441f;
+  --terciario: #486e33;
   --cultured: hsla(0, 0%, 97%, 1);
   --french-bistre: rgb(245, 134, 8);
   --jet: hsla(0, 0%, 20%, 1);
@@ -179,7 +183,7 @@ body {
 .h4 { font-size: var(--fs-4); }
 
 .btn {
-  background-color: var(--french-bistre);
+  background-color: var(--principal);
   color: var(--white);
   display: flex;
   align-items: center;
@@ -342,7 +346,7 @@ body {
 
 .hero-content {
   padding-top: 8rem;
-  text-align: left;
+  text-align: center;
   opacity: .9;
   padding-left: 10px;
   padding-right: 10px;
@@ -352,6 +356,10 @@ body {
   margin-right: auto;
   margin-left: auto;
   border-radius: 20px; }
+
+  .hero-content .h1 { color: var(--principal) }
+
+  .hero-content .span { color: var(--secundario)}
 
 .hero .container {
   display: grid;
@@ -429,7 +437,7 @@ body {
 
 .about-content .section-title { margin-block-end: 20px; }
 
-.about .btn {margin-block: 30px; }
+.about .btn {margin-block: 30px; background-color: var(--secundario); }
 
 .about-banner-3 { border-bottom-right-radius: 100px; }
 
@@ -452,6 +460,8 @@ body {
   margin-inline: auto;
   margin-block-start: 24px;
 }
+
+.collection .section-title {padding-top: 20px;}
 
 /*-----------------------------------*\
   #POPUP TEAM
@@ -721,7 +731,7 @@ body {
 \*-----------------------------------*/
 
 .footer {
-  background-color: var(--bistre);
+  background-color: var(--principal);
   color: var(--white);
 }
 
@@ -986,7 +996,7 @@ body {
 
   .hero-content {
   padding-top: 8rem;
-  text-align: left;
+  text-align: center;
   opacity: .9;
   padding-left: 10px;
   padding-right: 10px;
