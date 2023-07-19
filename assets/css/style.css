@@ -195,7 +195,7 @@ body {
   transition: var(--transition-1);
 }
 
-.btn:is(:hover, :focus-visible) { background-color: var(--umber); }
+/* .btn:is(:hover, :focus-visible) { background-color: var(--terciario); } */
 
 
 .img-holder {
@@ -437,7 +437,20 @@ body {
 
 .about-content .section-title { margin-block-end: 20px; }
 
-.about .btn {margin-block: 30px; background-color: var(--secundario); }
+.about .btn {
+  margin-block: 30px; background-color: var(--secundario); 
+}
+
+.about .btn {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition-1);
+}
+
+.about .btn:is(:hover, :focus-visible) { color: var(--terciario); }
+
 
 .about-banner-3 { border-bottom-right-radius: 100px; }
 
@@ -674,6 +687,7 @@ body {
 .gallery-card .card-title { color: var(--white); }
 
 .gallery-card .btn-link {
+  background-color: var(--principal);
   color: var(--white);
   display: flex;
   align-items: center;
@@ -681,7 +695,7 @@ body {
   transition: var(--transition-1);
 }
 
-.btn-link:is(:hover, :focus-visible) { color: var(--french-bistre); }
+.btn:is(:hover, :focus-visible) { color: var(--terciario); }
 
 .gallery-card .a { visibility: hidden; }
 
