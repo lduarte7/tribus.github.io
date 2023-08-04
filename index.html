@@ -32,7 +32,8 @@
   <link rel="preload" as="image" href="./assets/images/about-3.jpg">
   <link rel="preload" as="image" href="./assets/images/aloisio.jpeg">
   <link rel="preload" as="image" href="./assets/images/paola.jpeg">
-  <link rel="preload" as="image" href="  ./assets/images/felipe.jpeg">
+  <link rel="preload" as="image" href="./assets/images/felipe.jpeg">
+  <link rel="preload" as="image" href="./assets/images/ebook-image.jpg">
   <!-- End -->
 </head>
 
@@ -70,9 +71,9 @@
             <a href="#team" class="navbar-link">Nossa Equipe</a>
           </li>
 
-          <li>
+          <!-- <li>
             <a href="#blog" class="navbar-link">Blog</a>
-          </li>
+          </li> -->
 
           <li>
             <a href="#" class="navbar-link">Contato</a>
@@ -96,6 +97,28 @@
 
 
   <main>
+
+    <section class="section book" aria-labelledby="about-label" id="">
+      <div class="container">
+
+        <div class="book-content">
+
+          <h2 class="headline-md section-title">
+            Adquira o seu e-book
+          </h2>
+
+          <p class="title-sm section-text">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+
+        </div>
+
+        <div class="about-banner">
+
+          <img src="./assets/images/ebook-image.jpg" width="331" height="685" loading="lazy" alt="about banner" class="w-100">
+
+        </div>
+
+      </div>
+    </section>
 
 
       <!-- HERO SECTION -->
@@ -123,8 +146,6 @@
             </a> -->
 
           </div>
-
-
             <img src="./assets/images/hero-shape.png" width="570" height="676" alt="laves" class="shape">
           </div>
 
@@ -387,74 +408,6 @@
       </secion>
 
       <!-- END EQUIPE -->
-
-
-
-      <!-- <section class="feature" aria-label="features">
-
-          <div class="section feature-content">
-
-            <div class="container">
-              <h2 class="h2 section-title">
-                Parceiros
-              </h2>
-
-              <ul class="feature-list">
-
-                <li>
-                  <div class="feature-list-card">
-                    <div class="card-icon">
-                      <img src="./assets/images/feature-icon-1.svg" width="45" height="45" loading="lazy" alt="review icon">
-                    </div>
-
-                    <div>
-                      <h3 class="h4 card-title">100% Guarantee</h3>
-                      <p class="card-text">Vestibulum in eros at lectus commodo
-                      </p>
-                    </div>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="feature-list-card">
-                    <div class="card-icon">
-                      <img src="./assets/images/feature-icon-2.svg" width="45" height="45" loading="lazy" alt="badge icon">
-                    </div>
-
-                    <div>
-                      <h3 class="h4 card-title">Professional Staffs</h3>
-                      <p class="card-text">
-                        Vestibulum in eros at lectus commodo
-                      </p>
-                    </div>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="feature-list-card">
-                    <div class="card-icon">
-                      <img src="./assets/images/feature-icon-3.svg" width="45" height="45" loading="lazy" alt="money bag icon">
-                    </div>
-
-                    <div>
-                      <h3 class="h4 card-title">Affordable Price</h3>
-                      <p class="card-text">
-                        Vestibulum in eros at lectus commodo
-                      </p>
-                    </div>
-
-                  </div>
-                </li>
-
-              </ul>
-
-            </div>
-          </div>
-
-      </section> -->
-
 
 
       <!-- PROJETOS GALLERY -->
@@ -795,7 +748,7 @@
 
       <!-- TESTIMONIALS  -->
 
-      <!-- <section class="section testi" aria-label="testimonials"> 
+       <!-- <section class="section testi" aria-label="testimonials"> 
 
           <div class="container">
       
@@ -816,28 +769,35 @@
               </div>
       
             </div>
-      
-      </section> -->
+      </section>  -->
       
       <!-- END TESTIMONIALS -->
 
 
       <!-- FOOTER -->
-      <footer class="footer">
 
-        <div class="container">
+      <footer class="footer has-bg-image">
 
-          <div class="section footer-top">
-
+        <div class="section footer-top">
+          <div class="container">
             <div class="footer-brand">
 
-              <a href="#" class="footer-list-title">Studio Tribus</a>
-              <p class="footer-text">Rio Grande do Sul, Brasil</p>
+              <a href="#" class="logo">
+                <img src="./assets/images/logofull.png" width="280" alt="Tribus home">
+              </a>
 
-              <p class="footer-list-title">Redes Sociais</p>
+              <!-- <p class="title-sm footer-text">Rio Grande do Sul, Porto Alegre</p> -->
+
+            </div>
+
+            <ul class="footer-list">
+              
+              <li>
+                <p class="headline-sm footer-list-title">Redes Sociais</p>
+              </li>
               <ul class="social-list">
 
-                <li> 
+                <li>
                   <a href="#" class="social-link">
                     <ion-icon name="logo-facebook"></ion-icon>
                   </a>
@@ -850,65 +810,64 @@
                   </a>
                 </li>
 
-
               </ul>
 
-            </div>
+            </ul>
 
-            <div class="footer-brand">
 
-              <a href="#" class="footer-list-title">Parceiros</a>
-              <ul class="footer-text">              
-
-                <li>
-                  <div class="parceiros-img">
-                    <img src="./assets/images/Iris_logo.png" width="43" height="47">
-                    <a href="https://www.instagram.com/irisstudio3d/" class="footer-text">Iris Studio 3D</a>
-                  </div>
-                </li>
-                <!-- <li>              
-                  <p class="footer-text">Espaço Reservado</p>
-                </li>
-                <li>              
-                  <p class="footer-text">Espaço Reservado</p>
-                </li> -->
+            <ul class="footer-list">
               
-              </ul>
+              <li>
+                <p class="headline-sm footer-list-title">Contato</p>
+              </li>
 
-            </div>
+              <li>
+                <a href="#" class="title-sm footer-link">(51) 99256-4910</a>
+              </li>
 
-            <div class="footer-brand">
+              <li>
+                <a href="#" class="title-sm footer-link">(65) 99633-9285</a>
+              </li>
 
-              <a href="#" class="footer-list-title">Contato</a>
-              <ul class="footer-text">              
-                <li>              
-                  <p class="footer-text">(51) 99256-4910</p>
-                </li>
+              <li>
+                <a href="#" class="title-sm footer-link">studiotribuspaisagismo@gmail.com</a>
+              </li>
 
-                <li>              
-                  <p class="footer-text">(65) 99633-9285</p>
-                </li>
 
-                <li>              
-                  <p class="footer-text">studiotribuspaisagismo@gmail.com</p>
-                </li>
-              </ul>
+            </ul>
 
-            </div>
+            <ul class="footer-list">
+
+              <li>
+                <p class="headline-sm footer-list-title">Parceiros</p>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/irisstudio3d/" class="title-sm footer-link">Iris Studio 3D
+
+                  <img src="./assets/images/Iris_logo.png" width="50" height="50" loading="lazy" alt="Iris Studio" >
+                </a>
+              </li>
+
+            </ul>
 
           </div>
 
-          <div class="footer-bottom">
-
-            <p class="copyright">© 2023 Tribus | Studio de Arquitetura e Urbanismo. Todos os Direitos Reservados.</p>
-
-          </div>
-          
         </div>
 
+        <div class="footer-bottom">
+          <div class="container">
+            <p class="copyright">
+              © 2023 Copyright. Tribus - Studio de Arquitetura e Urbanismo. Todos os Direitos Reservados.
+            </p>
+          </div>
+        </div>
+      
       </footer>
-
       <!-- END FOOTER -->
+
+
+
 
     </article>   
       
