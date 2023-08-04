@@ -340,11 +340,57 @@ body {
   #BOOK
 \*-----------------------------------*/
 
+.book {
+  background-color: var(--secundario);
+  color: var(--white);
+}
+
 .book .container {
   display: grid;
   gap: 30px;
+  align-items: center;
 }
 
+.book-banner {
+  border-radius: var(--radius-16);
+  max-width: max-content;
+}
+
+.book-banner-1 { border-bottom-right-radius: 120px; }
+
+.book .section-title { color: var(--white); }
+
+.book .wrapper .section-title { margin-block-start: 20px; }
+
+
+.book-content .section-title { margin-block-end: 20px; }
+
+.book .book-btn {
+  margin-block: 30px; background-color: var(--principal); 
+}
+
+.book-btn {
+  background-color: var(--principal);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  max-width: max-content;
+  gap: 12px;
+  min-height: 58px;
+  padding-inline: 36px;
+  border-radius: var(--btn-radius);
+  transition: var(--transition-2);
+}
+
+/* .book .book-btn {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition-1);
+} */
+
+.book-btn:is(:hover, :focus-visible) { color: var(--terciario); }
 
 
 /*-----------------------------------*\
@@ -900,7 +946,6 @@ body {
 
 
 
-
 /* 
   Responsivo para telas maiores que 575px
 */
@@ -922,6 +967,7 @@ body {
   }
 
   .footer-top .container {grid-template-columns: 1fr 1fr; }
+
 }
 
 
@@ -955,6 +1001,9 @@ body {
   .grid-list {
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    
   }
 
 
@@ -1101,6 +1150,27 @@ body {
   }
 
 
+  /* book */
+
+  .book .container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  .book .wrapper {
+    align-self: flex-end;
+    margin: 60px;
+  }
+
+  .book-banner-1 {
+    margin-top: 60px;
+  }
+
+  .book-banner-1 {
+    border-bottom-right-radius: var(--radius-16);
+    border-top-left-radius: 120px;
+  }
 
   /* collection */
 
@@ -1166,8 +1236,6 @@ body {
     margin-block-end: 60px;
   }
 
-  .book .container { grid-template-columns: 1fr 1fr;}
-
 
   /* about */
 
@@ -1175,7 +1243,15 @@ body {
 
   .about .wrapper .section-title { margin-inline-end: -80px; }
 
+
   .about-banner-3 { margin-block-start: 60px; }
+
+  /* book */
+
+  .book .container { gap: 70px;}
+
+  .book .wrapper .section-title { margin-inline-end: -80px; }
+
 
 
   /* testimonials  */
