@@ -51,7 +51,7 @@
   /* spacing
    */
 
-  --section-padding: 10rem;
+  --section-padding: 5rem;
 
    /* shadows 
    */
@@ -218,7 +218,10 @@ body {
   transition: var(--transition-2);
 }
 
-.text-center { text-align: center;}
+.text-center { 
+  text-align: center;
+  display: flex;
+}
 
 .grid-list { 
   display: grid;
@@ -365,13 +368,14 @@ body {
 
 .book .section-title { color: var(--white); }
 
-.book .wrapper .section-title { margin-block-start: 20px; }
+.book .wrapper .section-title { margin-block-start: 35px; }
 
 
 .book-content .section-title { margin-block-end: 20px; }
 
 .book .book-btn {
-  margin-block: 30px; background-color: var(--principal); 
+  margin-block: 30px; 
+  background-color: var(--principal); 
 }
 
 .book-btn {
@@ -654,71 +658,6 @@ body {
 }
 
 
-/*-----------------------------------*\
-  #FEATURES
-\*-----------------------------------*/
-
-.feature {
-  background-color: var(--bistre);
-  color: var(--white);
-}
-
-.feature :is(.h2, .h4) { color: var(--white);}
-
-.feature .section-text { margin-block: 30px;}
-
-.feature-list-card {
-  display:flex;
-  align-items: flex-start;
-  gap: 20px;
-  margin-block-end: 30px;
-}
-
-.feature-list-card .card-icon {
-  background-color: var(--french-bistre);
-  padding: 15px;
-  padding-block-start: 20px;
-  flex-shrink: 0;
-  border-radius: var(--radius-6);
-  border-top-left-radius: 40px;
-}
-
-.feature-list-card .card-title {margin-block-end: 12px;}
-
-/*-----------------------------------*\
-  #TESTIMONIALS
-\*-----------------------------------*/
-
- .testi {padding-block-start: 100px;} 
-
- .test-card { 
-  position: relative;
-  padding-inline: 36px;
-}
-
-.testi :is(.card-text, .client-name) {
-  color: var(--bistre);
-  font-family: var(--ff-rosario);
-  line-height: 1.3;
-}
-
-.test-card {
-  font-size: var(--fs-3);
-  margin-block-end: 40px;
-}
-
-.test-card .client-name {
-  font-size: var(--fs-5);
-  font-weight: var(--fw-700);
-}
-
-.test-card .icon {
-  position: absolute;
-  top: -80px;
-  left: 0;
-}
-
-
 
 /*-----------------------------------*\
   #GALLERY
@@ -763,46 +702,6 @@ body {
 
 .gallery-card .a { visibility: hidden; }
 
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
-
-.blog .section-text { margin-block: 20px 36px; }
-
-.blog .grid-list { gap: 30px; }
-
-.blog-card .card-banner { border-radius: 50px 50px 0 0; }
-
-.blog-card .img-cover { will-change: transform; }
-
-.blog-card:is(:hover, :focus-within) .img-cover {
-  transform: scale(1.05) rotate(2deg);
-  opacity: 0.8;
-}
-
-.blog-card .card-content {padding: 10px; }
-
-.blog-card .card-title { margin-block: 8px 20px;}
-
-.blog-card :is(.card-meta, .card-meta-wrapper) {
-  display: flex;
-  align-items: center;
-}
-
-.blog-card .card-meta {
-  flex-wrap: wrap;
-  column-gap: 40px;
-}
-
-.blog-card .card-meta-wrapper { gap: 8px; }
-
-.blog-card .card-meta-wrapper ion-icon {color: var(--french-bistre);}
-
-.blog .btn {
-  margin-block-start: 80px;
-  margin-inline: auto;
-}
 
 /*-----------------------------------*\
   #FOOTER
@@ -867,25 +766,23 @@ body {
   #COURSE
 \*-----------------------------------*/
 
-.course .grid-list-card { padding-block: 20px 44px;}
+.book-about .grid-list-card { padding-block: 20px 44px;}
 
-.course-card {
+.book-about-card {
   border-block-end: 4px solid transparent;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.course-card:is(:hover,:focus-within) {
-  border-color: var(--light-coral);
-}
 
 .course-card .card-banner {
-  height: 160px;
-  background-color: var(--light-gray);
-  overflow: hidden;
+  height: 230px;
+  /* background-color: var(--principal); */
+  /* overflow: hidden; */
   border-radius: var(--radius-4);
 }
+
 
 .course-card :is(.wrapper, .rating-wrapper) {
   display: flex;
@@ -897,7 +794,15 @@ body {
   gap: 16px;
 }
 
-.course-card .card-price {  color: var(--light-coral); }
+.card-price {
+  color: var(--secundario);
+  font-size: var(--fs-4);
+  font-weight: bold;
+}
+
+.title-lg { font-weight: bold;}
+
+.card-meta .wrapper .section-text { font-family: var(--ff-poppins);}
 
 .course-card .rating-wrapper { gap: 4px; }
 
@@ -905,14 +810,66 @@ body {
 
 .course-card .card-meta { justify-content: flex-start; }
 
-.course-card .card-meta .title-sm {
+.course-card .card-meta .section-text {
   display: flex;
   gap: 8px;
 }
 
-.course .btn {
-  margin-inline: auto;
+.grid-list-card .section-text { text-align:justify; }
+
+/*-----------------------------------*\
+  #DIFERENCIAL
+\*-----------------------------------*/
+
+.diferencial {
+  background-color: var(--secundario);
+  color: var(--white);
 }
+
+.diferencial .section-title {
+  color: var(--white);
+  padding-bottom: 35px;
+}
+
+.diferencial .container {
+  width: 960px;
+}
+
+.diferencial .book-text {text-align: justify; }
+
+/*-----------------------------------*\
+  #WHO
+\*-----------------------------------*/
+
+.who .container {    
+  display: grid;
+  gap: 30px;
+  align-items: center;}
+
+.who-card {
+  list-style:circle;
+  font-family: var(--ff-poppins);
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.who-card:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.who-card::marker {
+  color: var(--principal);
+  font-size: 20px;
+  margin-left: 20px;
+  align-self: baseline;
+}
+
+.box .section-title {
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+
 
 /*-----------------------------------*\
   #MEDIA QUERIES
@@ -962,7 +919,7 @@ body {
   .course-card {flex-direction: row; }
 
   .course-card .card-banner {
-    width: 160px;
+    width: 100%;
     flex-shrink: 0;
   }
 
@@ -1147,6 +1104,13 @@ body {
     margin-inline-start: -180px;
   }
 
+  /* who */
+
+  .who .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+
 
   /* book */
 
@@ -1214,7 +1178,7 @@ body {
   /* course */
 
   .course .grid-list-card {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-block: 40px 48px;
   }
 
@@ -1257,16 +1221,6 @@ body {
 
   .book .wrapper .section-title { margin-inline-end: -80px; }
 
-
-
-  /* testimonials  */
-
-  .testi .container { max-width: 680px; }
-
-
-  /* blog */
-
-  .blog .grid-list { gap: 60px;}
 
   /* footer */
 
