@@ -220,7 +220,7 @@ body {
 
 .text-center { 
   text-align: center;
-  display: flex;
+  /* display: flex; */
 }
 
 .grid-list { 
@@ -400,6 +400,7 @@ body {
 } */
 
 .book-btn:is(:hover, :focus-visible) { color: var(--terciario); }
+
 
 
 /*-----------------------------------*\
@@ -821,9 +822,12 @@ body {
   #DIFERENCIAL
 \*-----------------------------------*/
 
+
 .diferencial {
   background-color: var(--secundario);
   color: var(--white);
+  display: flex;
+  text-align: center;
 }
 
 .diferencial .section-title {
@@ -853,21 +857,78 @@ body {
   text-align: left;
 }
 
+
+
 .who-card:not(:last-child) {
   margin-bottom: 15px;
+
 }
 
 .who-card::marker {
   color: var(--principal);
   font-size: 20px;
-  margin-left: 20px;
-  align-self: baseline;
 }
 
 .box .section-title {
   text-align: left;
   padding-bottom: 15px;
 }
+
+/*-----------------------------------*\
+  #DIFERENCIAL
+\*-----------------------------------*/
+
+
+.how {
+  background-color: var(--secundario);
+  color: var(--white);
+  display: flex;
+  text-align: center;
+}
+
+.how .section-title {
+  color: var(--white);
+  padding-bottom: 35px;
+}
+
+
+/*-----------------------------------*\
+  #BONUS
+\*-----------------------------------*/
+
+
+.bonus {
+  background-color: var(--secundario);
+  color: var(--white);
+  display: flex;
+  text-align: center;
+}
+
+.bonus .section-title {
+  color: var(--white);
+  padding-bottom: 35px;
+}
+
+/*-----------------------------------*\
+  #E-BOOK HERO
+\*-----------------------------------*/
+
+.ebook-hero {
+  background-color: var(--secundario);
+  color: var(--white);
+  display: flex;
+}
+
+.ebook-hero .container {
+  text-align: justify;
+  width: 900px;
+}
+
+.ebook-hero .h2 {
+  color: var(--white);
+  padding-top: 50px;
+}
+
 
 
 
@@ -922,6 +983,7 @@ body {
     width: 100%;
     flex-shrink: 0;
   }
+
 
 
 }
@@ -1113,6 +1175,17 @@ body {
 
 
   /* book */
+
+  .ebook .container {
+    grid-template-columns: repeat(1fr, 1fr);
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  .ebook .wrapper {
+    align-self: flex-end;
+    margin: 60px;
+  }
 
   .book .container {
     grid-template-columns: repeat(2, 1fr);
