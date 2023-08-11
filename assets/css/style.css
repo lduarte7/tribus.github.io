@@ -1189,7 +1189,7 @@ body {
 
   .book .container {
     grid-template-columns: repeat(2, 1fr);
-    align-items: flex-start;
+    /* align-items: flex-start; */
     gap: 50px;
   }
 
