@@ -143,6 +143,11 @@ body {
 \*-----------------------------------*/
 
 
+.grid-list-card {
+  display: grid;
+  gap: 10px;
+}
+
 
 .lines{
   margin-top: 50px;
@@ -803,72 +808,6 @@ body {
   #FOOTER
 \*-----------------------------------*/
 
-/* .footer {
-  background-color: var(--principal);
-  color: var(--white);
-}
-
-.parceiros-img {
-  display: flex;
-  align-items: center;
-}
-
-.parceiros-img .footer-text { 
-  padding-left: 5px;
-  width: auto;
-}
-
-.footer-top {
-  display: grid;
-  gap: 50px;
-  padding-block-end: 50px;
-  border-block-end: 1px solid var(--quarto);
-}
-
-.footer .logo {
-  color: var(--french-bistre);
-  font-size: 3.2rem;
-}
-
-.footer-brand .footer-text {
-  margin-block: 20px;
-}
-
-.social-list {
-  display: flex;
-  gap: 20px;
-}
-
-.social-link {
-  color: var(--quarto);
-  font-size: 1.8rem;
-}
-
-
-.footer-list-title {
-  color: var(--quarto);
-  font-family: var(--ff-rosario);
-  font-size: 1.8rem;
-  font-weight: var(--fw-700);
-  margin-block-end: 20px;
-}
-
-.footer-link { padding-block: 7px; }
-
-.footer-list .footer-text {margin-block-end: 24px;}
-
-.footer-bottom {
-  padding-block: 40px;
-  text-align: center;
-}
-
-.copyright {
-  color: var(--quarto);
-  font-family: var(--ff-rosario);
-  font-size: var(--fs-6);
-} */
-
-/* END */
 
 .footer {
   background-color: var(--principal);
@@ -923,6 +862,58 @@ body {
   font-size: var(--fs-6);
 }
 
+
+/*-----------------------------------*\
+  #COURSE
+\*-----------------------------------*/
+
+.course .grid-list-card { padding-block: 20px 44px;}
+
+.course-card {
+  border-block-end: 4px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.course-card:is(:hover,:focus-within) {
+  border-color: var(--light-coral);
+}
+
+.course-card .card-banner {
+  height: 160px;
+  background-color: var(--light-gray);
+  overflow: hidden;
+  border-radius: var(--radius-4);
+}
+
+.course-card :is(.wrapper, .rating-wrapper) {
+  display: flex;
+  align-items: center;
+}
+
+.course-card .wrapper {
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.course-card .card-price {  color: var(--light-coral); }
+
+.course-card .rating-wrapper { gap: 4px; }
+
+.course-card .card-title { margin-block: 8px 16px; }
+
+.course-card .card-meta { justify-content: flex-start; }
+
+.course-card .card-meta .title-sm {
+  display: flex;
+  gap: 8px;
+}
+
+.course .btn {
+  margin-inline: auto;
+}
+
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -968,6 +959,14 @@ body {
 
   .footer-top .container {grid-template-columns: 1fr 1fr; }
 
+  .course-card {flex-direction: row; }
+
+  .course-card .card-banner {
+    width: 160px;
+    flex-shrink: 0;
+  }
+
+
 }
 
 
@@ -1003,7 +1002,6 @@ body {
     column-gap: 30px;
     display: flex;
     flex-direction: row-reverse;
-    
   }
 
 
@@ -1211,6 +1209,13 @@ body {
 
   .footer-brand {
     padding-inline-end: 24px;
+  }
+
+  /* course */
+
+  .course .grid-list-card {
+    grid-template-columns: 1fr 1fr;
+    margin-block: 40px 48px;
   }
 
 }
