@@ -361,6 +361,7 @@ body {
 .book {
   background-color: var(--secundario);
   color: var(--white);
+  padding-bottom: 2vh;
 }
 
 .book .container {
@@ -380,6 +381,7 @@ body {
 
 .book .wrapper .section-title { margin-block-start: 35px; }
 
+.book .section-text { text-align: justify;}
 
 .book-content .section-title { margin-block-end: 20px; }
 
@@ -401,13 +403,6 @@ body {
   transition: var(--transition-2);
 }
 
-/* .book .book-btn {
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: var(--transition-1);
-} */
 
 .book-btn:is(:hover, :focus-visible) { color: var(--terciario); }
 
@@ -1004,6 +999,14 @@ body {
   .ebook-hero .container {
     text-align: center;
   }
+
+  .book .container {
+    text-align: center;
+  }
+
+  .book .book-btn {
+    margin-inline: auto;
+  }
 }
 
 @media (min-width: 200px) {
@@ -1053,6 +1056,8 @@ body {
     width: 100%;
     flex-shrink: 0;
   }
+
+  
 
 }
 
