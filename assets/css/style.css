@@ -159,6 +159,16 @@ body {
   background-color: black;
 }
 
+.ebook-lines{
+  margin-top: 13px;
+  width: 100%;
+  height: 2px;
+  border: 0 none;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: black;
+}
+
 .container { padding-inline: 16px; }
 
 .logo {
@@ -836,7 +846,11 @@ body {
 }
 
 .diferencial .container {
-  width: 960px;
+  width: 650px;
+}
+
+.diferencial .h2 {
+  font-size: 3.5rem;
 }
 
 .diferencial .book-text {text-align: justify; }
@@ -855,6 +869,10 @@ body {
   font-family: var(--ff-poppins);
   letter-spacing: 1px;
   text-align: left;
+}
+
+.who .h2 {
+  font-size: 3.4rem;
 }
 
 
@@ -883,7 +901,16 @@ body {
   background-color: var(--secundario);
   color: var(--white);
   display: flex;
+  text-align:justify;
+}
+
+.how .h2 {
+  font-size: 3.4rem;
   text-align: center;
+}
+
+.how .container {
+  width: 600px;
 }
 
 .how .section-title {
@@ -904,9 +931,25 @@ body {
   text-align: center;
 }
 
+.bonus .h2 {
+  font-size: 2.5rem;
+}
+
 .bonus .section-title {
   color: var(--white);
   padding-bottom: 35px;
+}
+
+.bonus .section-text {
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 23px;
+  padding-bottom: 10px;
+}
+
+.bonus .book-btn {
+  margin-inline: auto;
 }
 
 /*-----------------------------------*\
@@ -921,7 +964,7 @@ body {
 
 .ebook-hero .container {
   text-align: justify;
-  width: 900px;
+  width: 600px;
 }
 
 .ebook-hero .h2 {
@@ -929,12 +972,39 @@ body {
   padding-top: 50px;
 }
 
+/*-----------------------------------*\
+  #QUESTIONS
+\*-----------------------------------*/
+
+.questions {
+  display: flex;
+}
+
+.questions .container {
+  text-align: justify;
+  width: 500px;
+}
+
+
+.questions .card-title { 
+  color: var(--secundario);
+  font-weight: bold;
+ }
+
+/* .questions .section-text { text-align: justify; } */
+
 
 
 
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+@media (max-width: 500px) {
+  .ebook-hero .container {
+    text-align: center;
+  }
+}
 
 @media (min-width: 200px) {
 
@@ -984,8 +1054,6 @@ body {
     flex-shrink: 0;
   }
 
-
-
 }
 
 
@@ -1006,6 +1074,7 @@ body {
      */
 
     --fs-1: 6.5rem;
+    --fs-2: 4.5rem;
 
   }
 
@@ -1081,7 +1150,7 @@ body {
     typography 
     */
 
-    --fs-2: 4.8rem;
+    --fs-2: 4.6rem;
     --fs-3: 3.5.5rem;
   }
 
