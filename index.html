@@ -34,16 +34,28 @@
   <link rel="stylesheet" href="./assets/css/lightbox.css">
   <!--  -->
 
+
   <!-- Preload images -->
-  <!-- <link rel="preload" as="image" href="./assets/images/Bangalo/5.jpg">
-  <link rel="preload" as="image" href="./assets/images/about-1.jpg">
-  <link rel="preload" as="image" href="./assets/images/about-4.jpg">
-  <link rel="preload" as="image" href="./assets/images/about-3.jpg">
-  <link rel="preload" as="image" href="./assets/images/aloisio.jpeg">
-  <link rel="preload" as="image" href="./assets/images/paola.jpeg">
-  <link rel="preload" as="image" href="./assets/images/felipe.jpeg">
-  <link rel="preload" as="image" href="./assets/images/ebook-image.jpg"> -->
+  <link rel="preload" as="image" href="./assets/images/Cafe/Cafe1A.jpg">
+  <link rel="preload" as="image" href="./assets/images/Cafe/Cafe2A.jpg">
+  <link rel="preload" as="image" href="./assets/images/Cafe/Cafe3A.jp">
+  <link rel="preload" as="image" href="./assets/images/Cafe/Cafe4A.jpg">
+  <link rel="preload" as="image" href="./assets/images/Cafe/Cafe5A.jpg">
+  <link rel="preload" as="image" href="./assets/images/Varanda/2A.jpg">
+  <link rel="preload" as="image" href="./assets/images/Varanda/3A.jpg">
+  <link rel="preload" as="image" href="./assets/images/Varanda/4A.jpg">
+  <link rel="preload" as="image" href="./assets/images/Bangalo/1.jpg">  
+  <link rel="preload" as="image" href="./assets/images/Bangalo/2.jpg">
+  <link rel="preload" as="image" href="./assets/images/Bangalo/3.jpg">
+  <link rel="preload" as="image" href="./assets/images/Bangalo/4.jpg">
+  <link rel="preload" as="image" href="./assets/images/Bangalo/5.jpg">
+  <link rel="preload" as="image" href="./assets/images/Bangalo/6.jpg">
+  <link rel="preload" as="image" href="./assets/images/GreenHouse/1_FINAL.jpg">
+  <link rel="preload" as="image" href="./assets/images/GreenHouse/2_FINAL.jpg">
+  <link rel="preload" as="image" href="./assets/images/GreenHouse/3_FINAL.jpg">
   <!-- End -->
+
+
 </head>
 
 <body>
@@ -129,7 +141,7 @@
 
         <figure class="book-banner book-banner-1 img-holder" 
         style="--width: 400; --height: 280;">
-        <img src="./assets/images/ebook-image.jpg" width="400" height="280" loading="lazy" alt="craftman in workshop" >
+        <img src="./assets/images/3.jpg" width="400" height="280" loading="lazy" alt="craftman in workshop" >
         </figure>
 
       </div>
@@ -237,20 +249,17 @@
             Equipe
           </h2>
 
-          <!-- <p class="section-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie ligula dignissim.
-          </p> -->
 
           <ul class="grid-list">
 
             <li>
-              <div class="collection-card">
+              <div class="collection-card" id="Aloisio Gianesini">
 
                 <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
                   <img src="./assets/images/aloisio.jpeg" width="500" height="600" loading="lazy" alt="Pottery & Ceramics" class="img-cover">
                 </figure>
 
-                <div class="card-content">
+                <div class="card-content" >
 
                   <h3 class="h3 card-title">
                     Aloisio Gianesini
@@ -262,7 +271,7 @@
                   </p>
                   
 
-                  <a href="#team" class="btn" data-tab="team1">
+                  <a href="#Aloisio Gianesini" class="btn" data-tab="team1">
                     <span class="span">Ver mais</span>
                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                   </a>
@@ -307,7 +316,7 @@
               <div class="collection-card">
 
                 <figure class="card-banner img-holder" style="--width: 500; --height: 530;">
-                  <img src="./assets/images/paola.jpeg" width="500" height="530" loading="lazy" alt="Pottery & Ceramics" class="img-cover">
+                  <img src="./assets/images/paola.jpeg" width="500" height="530" loading="lazy" alt="Arquiteta e Urbanista" class="img-cover">
                 </figure>
 
                 <div class="card-content">
@@ -320,27 +329,27 @@
                     Arquiteta e Urbanista formada pela PUCRS, pós-graduanda em Paisagismo pela PUCRS. Responsável pela elaboração de projetos e textos, representação gráfica e diagramação.
                   </p>
 
-                  <a href="#team" class="btn" data-tab="team2">
+                  <a href="#Paola Feitosa" class="btn" data-tab="team2">
                     <span class="span">Ver mais</span>
                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                   </a>
 
 
-                  <div class="popup_wrap" id="team2">
+                  <div class="popup_wrap" id="team2" style="z-index:100; position: fixed;">
                     <div class="overlay_popup"></div>
 
-                      <div class="popup_box" style="z-index:100; position: fixed;">
+                      <div class="popup_box">
 
                         <div class="close_btn">
                           
                         </div>
 
                         <div class="left_image">
-                          <img src="./assets/images/Paola_profile.png" width="500" height="550">
+                          <img src="./assets/images/Paola_profile.png" width="300" height="350">
                         </div>
 
                         <div class="right_content">
-                          <h2>Paola
+                          <h2>Paola 
                             <span class="status">
                               Feitosa
                             </span>
@@ -352,16 +361,13 @@
 
                       </div>
 
-
-                  </div>
-
                 </div>
 
               </div>
             </li>
 
             <li>
-              <div class="collection-card">
+              <div class="collection-card" id="Felipe">
 
                 <figure class="card-banner img-holder" style="--width: 500; --height: 550;">
                   <img src="./assets/images/felipe.jpeg" width="500" height="550" loading="lazy" alt="Arquiteto e Urbanista" class="img-cover">
@@ -377,7 +383,7 @@
                     Arquiteto e Urbanista formado pela PUCRS, mestre em Paisagismo pela UFRJ. Responsável pela elaboração de projetos, modelagens 3D e administração das redes sociais.
                   </p>
 
-                  <a href="#team" class="btn" data-tab="team3">
+                  <a href="#Felipe" class="btn" data-tab="team3">
                     <span class="span">Ver mais</span>
                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                   </a>
@@ -434,28 +440,28 @@
 
           <li>
             <div class="gallery-card has-bg-image has-after"
-              style="background-image: url('./assets/images/Cafe/Café\ 1A.jpg')">
+              style="background-image: url('./assets/images/Cafe/Café\ 1A.jpg')" loading="lazy">
               <div class="card-content">
                 
                 <h3 class="h3 card-title">Café Desértico</h3>
 
                 <div>
                   <a href="./assets/images/Cafe/Café 1A.jpg"
-                  class="btn-link" data-lightbox="cafe desertico" data-title="Descrição">
+                  class="btn-link" data-lightbox="cafe desertico" loading="lazy" data-title="Descrição">
                     <span class="span">Ver Galeria</span>
                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
 
 
-                    <a href="./assets/images/Cafe/Café 2A.jpg" data-lightbox="cafe desertico" data-title="Descrição">
+                    <a href="./assets/images/Cafe/Café 2A.jpg" loading="lazy" data-lightbox="cafe desertico" data-title="Descrição">
                     </a>
 
-                    <a href="./assets/images/Cafe/Cafe 3A.jpg" data-lightbox="cafe desertico" data-title="Descrição">
+                    <a href="./assets/images/Cafe/Cafe 3A.jpg" loading="lazy" data-lightbox="cafe desertico" data-title="Descrição">
                     </a>
 
-                    <a href="./assets/images/Cafe/Café 4A.jpg" data-lightbox="cafe desertico" data-title="Descrição">
+                    <a href="./assets/images/Cafe/Café 4A.jpg" loading="lazy" data-lightbox="cafe desertico" data-title="Descrição">
                     </a>
 
-                    <a href="./assets/images/Cafe/Café 5A.jpg" data-lightbox="cafe desertico" data-title="Descrição">
+                    <a href="./assets/images/Cafe/Café 5A.jpg" loading="lazy" data-lightbox="cafe desertico" data-title="Descrição">
                     </a>
                 </a>
                 </div>
@@ -465,25 +471,25 @@
 
           <li>
             <div class="gallery-card has-bg-image has-after"
-              style="background-image: url('./assets/images/Varanda/1B.jpg')">
+              style="background-image: url('./assets/images/Varanda/1B.jpg')" loading="lazy" >
               <div class="card-content">
 
                 <h3 class="h3 card-title">Jardim Varanda</h3>
 
                 <div>
-                  <a href="./assets/images/Varanda/1B.jpg" class="btn-link" data-lightbox="jardim varanda" data-title="Descrição">
+                  <a href="./assets/images/Varanda/1B.jpg" class="btn-link" loading="lazy" data-lightbox="jardim varanda" data-title="Descrição">
                     <span class="span">Ver galeria</span>
   
                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                   </a>
 
-                  <a href="./assets/images/Varanda/2A.jpg" data-lightbox="jardim varanda" data-title="Descrição">
+                  <a href="./assets/images/Varanda/2A.jpg" loading="lazy" data-lightbox="jardim varanda" data-title="Descrição">
                   </a>
 
-                  <a href="./assets/images/Varanda/3A.jpg" data-lightbox="jardim varanda" data-title="Descrição">
+                  <a href="./assets/images/Varanda/3A.jpg" loading="lazy" data-lightbox="jardim varanda" data-title="Descrição">
                   </a>
 
-                  <a href="./assets/images/Varanda/4A.jpg" data-lightbox="jardim varanda" data-title="Descrição">
+                  <a href="./assets/images/Varanda/4A.jpg" loading="lazy" data-lightbox="jardim varanda" data-title="Descrição">
                   </a>
 
                 </div>
@@ -495,31 +501,31 @@
 
           <li>
             <div class="gallery-card has-bg-image has-after"
-              style="background-image: url('./assets/images/Bangalo/1.jpg')">
+              style="background-image: url('./assets/images/Bangalo/1.jpg')" loading="lazy" >
               <div class="card-content">
 
                 <h3 class="h3 card-title">Jardim Bangalô</h3>
 
                 <div>
-                  <a href="./assets/images/Bangalo/1.jpg" class="btn-link" data-lightbox="jardim bangalo" data-title="Descrição">
+                  <a href="./assets/images/Bangalo/1.jpg" class="btn-link" loading="lazy" data-lightbox="jardim bangalo" data-title="Descrição">
                     <span class="span">Ver galeria</span>
   
                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                   </a>
 
-                  <a href="./assets/images/Bangalo/2.jpg" data-lightbox="jardim bangalo" data-title="Descrição">
+                  <a href="./assets/images/Bangalo/2.jpg" loading="lazy" data-lightbox="jardim bangalo" data-title="Descrição">
                   </a>
 
-                  <a href="./assets/images/Bangalo/3.jpg" data-lightbox="jardim bangalo" data-title="Descrição">
+                  <a href="./assets/images/Bangalo/3.jpg" loading="lazy" data-lightbox="jardim bangalo" data-title="Descrição">
                   </a>
 
-                  <a href="./assets/images/Bangalo/4.jpg" data-lightbox="jardim bangalo" data-title="Descrição">
+                  <a href="./assets/images/Bangalo/4.jpg" loading="lazy" data-lightbox="jardim bangalo" data-title="Descrição">
                   </a>
 
-                  <a href="./assets/images/Bangalo/5.jpg" data-lightbox="jardim bangalo" data-title="Descrição">
+                  <a href="./assets/images/Bangalo/5.jpg" loading="lazy" data-lightbox="jardim bangalo" data-title="Descrição">
                   </a>
 
-                  <a href="./assets/images/Bangalo/6.jpg" data-lightbox="jardim bangalo" data-title="Descrição">
+                  <a href="./assets/images/Bangalo/6.jpg" loading="lazy" data-lightbox="jardim bangalo" data-title="Descrição">
                   </a>
                 </div>
 
@@ -529,21 +535,21 @@
 
           <li>
             <div class="gallery-card has-bg-image has-after"
-              style="background-image: url('./assets/images/GreenHouse/1_FINAL.jpg')">
+              style="background-image: url('./assets/images/GreenHouse/1_FINAL.jpg')" loading="lazy" >
               <div class="card-content">
 
                 <h3 class="h3 card-title">Green House</h3>
 
                 <div>
 
-                  <a href="./assets/images/GreenHouse/1_FINAL.jpg" class="btn-link" data-lightbox="green house" data-title="Descrição">
+                  <a href="./assets/images/GreenHouse/1_FINAL.jpg" loading="lazy" class="btn-link" data-lightbox="green house" data-title="Descrição">
                     <span class="span">Ver galeria</span>
   
                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                       
-                  <a href="./assets/images/GreenHouse/2_FINAL.jpg" data-lightbox="green house" data-title="Descrição">
+                  <a href="./assets/images/GreenHouse/2_FINAL.jpg" loading="lazy" data-lightbox="green house" data-title="Descrição">
   
-                  <a href="./assets/images/GreenHouse/3_FINAL.jpg" data-lightbox="green house" data-title="Descrição">
+                  <a href="./assets/images/GreenHouse/3_FINAL.jpg" loading="lazy" data-lightbox="green house" data-title="Descrição">
                   </a>
 
   
@@ -577,15 +583,7 @@
 
         <div class="section footer-top">
           <div class="container">
-            <!-- <div class="footer-brand">
 
-              <a href="#" class="logo">
-                <img src="./assets/images/logofull.png" width="280" alt="Tribus home">
-              </a>
-
-              <p class="title-sm footer-text">Rio Grande do Sul, Porto Alegre</p>
-
-            </div> -->
 
             <ul class="footer-list">
               
